@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простая форма</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="main_div">
+        <h2>Exapmle form</h2>
+
+        <div class="results">
+            <span>All: <b class="all">12</b></span>
+            <span>Need: <b class="need">7</b></span>
+            <span>Success: <b class="success">7/7</b></span>
+            <span>Error: <b class="err">4/7</b></span>
+        </div>
+    </div>
+
+    <form name="form">
+        <div class="inputs">
+            <div class="input_box required">
+                <label for="name">
+                    <span>Name</span>
+                </label>
+                <input id="name" class="input-field" type="text" name='name'>
+            </div>
+
+
+            <div class="input_box required">
+                <label for="age">
+                    <span>Age</span>
+                </label>
+                <input id="age" class="input-field" type="text" name='age'>
+            </div>
+
+
+            <div class="input_box">
+                <label for="surname">
+                    <span>Surname</span>
+                </label>
+                <input id="surname" class="input-field" type="text" name='surname'>
+                <span class="error__text">Need to fill</span>
+            </div>
+
+
+            <div class="input_box required">
+                <label for="about">
+                    <span>About You</span>
+                </label>
+                <input id="about" class="input-field" type="text" name='about'>
+                <span class="error__text">Need to fill</span>
+            </div>
+
+
+            <div class="input_box required">
+                <label for="email">
+                    <span>Email Address</span>
+                </label>
+                <input id="email" class="input-field" type="text" name="email">
+                
+                <span class="error__text">Need to fill</span>
+            </div>
+
+
+            <div class="input_box required">
+                <label for="js">
+                    <span>What is JavaScript?</span>
+                </label>
+                <input id="js" class="input-field" type="text" name='js'>
+            </div>
+
+
+            <div class="input_box">
+                <label for="number">
+                    <span>Phone number</span>
+                </label>
+                <input id="number" class="input-field" type="text" name='number'>
+                <span class="error__text">Need to fill</span>
+            </div>
+
+
+            <div class="input_box required">
+                <label for="html">
+                    <span>What is HTML?</span>
+                </label>
+                <input id="html" class="input-field" type="text" name='html'>
+                <span class="error__text">Need to fill</span>
+            </div>
+
+            <div class="input_box ">
+                <label for="moms_name">
+                    <span>Your Mom’s name</span>
+                </label>
+                <input id="moms_name" class="input-field" type="text" name='moms_name'>
+                <span class="error__text">Need to fill</span>
+            </div>
+
+
+            <div class="input_box required">
+                <label for="css">
+                    <span>What is CSS?</span>
+                </label>
+                <input id="css" class="input-field" type="text" name='css'>
+            </div>
+
+
+            <div class="input_box">
+                <label for="paps_name">
+                    <span>Your Pap’s name</span>
+                </label>
+                <input id="paps_name" class="input-field" type="text" name='paps_name'>
+            </div>
+            
+
+            <div class="input_box">
+                <label for="car">
+                    <span>Your Favourite Car</span>
+                </label>
+                <input id="car" class="input-field" type="text" name='car'>
+            </div>
+        </div>
+        <button type="submit">Save changes</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
