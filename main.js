@@ -1,16 +1,18 @@
-const form = document.forms.form;
-const requiredFields = document.querySelectorAll('.required .input-field'); // Все выделенные поля с классом required
+const Form = document.forms.form;
+const Required = document.querySelectorAll('.required .input-field ');
 const users = [];
 
-form.onsubmit = (e) => {
+Form.onsubmit = (e) => {
     e.preventDefault();
     const user = {};
 
-    
-    requiredFields.forEach((input) => {
+    Required.forEach((input) => {
         user[input.name] = input.value.trim();
-    });
+});
 
-    users.push(user); 
-    console.log(users); 
-};
+users.push(user)
+console.log(users);
+
+
+
+}
