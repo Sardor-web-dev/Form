@@ -11,9 +11,9 @@ Form.onsubmit = (e) => {
     // })
     Required.forEach((input) => {
         user[input.name] = input.value.trim();
+
 });
 
 users.push(user)
 console.log(users);
-
 }
